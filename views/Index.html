@@ -1,54 +1,155 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>MakeYourFood</title>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto:wght@400;500;700;900&display=swap"
-      rel="stylesheet"
-    />
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MakeYourFood</title>
 
-    <script
-      src="https://kit.fontawesome.com/8d58cf1b1f.js"
-      crossorigin="anonymous"
-    ></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto:wght@400;500;700;900&display=swap"
+    rel="stylesheet" />
 
-    <link rel="stylesheet" href="../css/components/Header.css" />
-    <link rel="stylesheet" href="../css/Index.css" />
-  </head>
-  <body>
-    <header>
-      <div class="container">
-        <div>
-          <a href="#" class="logo">MakeYourFood</a>
-        </div>
+  <script src="https://kit.fontawesome.com/8d58cf1b1f.js" crossorigin="anonymous"></script>
 
-        <div class="search">
-          <form>
-            <span><i class="fa-solid fa-magnifying-glass"></i></span>
-            <input
-              type="text"
-              name="search"
-              id="search"
-              placeholder="Buscar seu Lanche"
-            />
-          </form>
-        </div>
+  <link rel="stylesheet" href="../css/components/Header.css" />
+  <link rel="stylesheet" href="../css/Index.css" />
+</head>
 
-        <div class="buttonDesktop">
-          <button class="buttonWithoutBackground">criar conta</button>
-          <button class="buttonWithBackground">Entrar</button>
-        </div>
-
-        <div class="buttonMobile">
-          <button class="buttonWithBackground">Entrar</button>
-        </div>
+<body>
+  <header>
+    <div class="container">
+      <div>
+        <a href="#" class="logo">MakeYourFood</a>
       </div>
-    </header>
-  </body>
+
+      <div class="search">
+        <form>
+          <span><i class="fa-solid fa-magnifying-glass"></i></span>
+          <input type="text" name="search" id="search" placeholder="Buscar seu Lanche" />
+        </form>
+      </div>
+
+      <div class="buttonDesktop">
+        <button class="buttonWithoutBackground">criar conta</button>
+        <button class="buttonWithBackground">Entrar</button>
+      </div>
+
+      <div class="buttonMobile">
+        <button class="buttonWithBackground">Entrar</button>
+      </div>
+    </div>
+  </header>
+  <main>
+    <a href="#detalheProduto">
+      <section class="banner">
+      </section>
+    </a>
+
+    <section class="categories">
+      <a href="Category.html">
+        <div class="card cardCarne">
+          <span class="cardTitle">Lanches de carne</span>
+        </div>
+      </a>
+      <a href="Category.html">
+        <div class="card cardFrango">
+          <span class="cardTitle">Lanches de frango</span>
+        </div>
+      </a>
+      <a href="Category.html">
+        <div class="card cardVegetariano">
+          <span class="cardTitle">Lanches vegetarianos</span>
+        </div>
+      </a>
+      <a href="Category.html">
+        <div class="card cardFit">
+          <span class="cardTitle">Linha fit</span>
+        </div>
+      </a>
+    </section>
+
+    <!-- detalhe do produto -->
+    <section>
+      <div class="modal" id="detalheProduto" tabindex="-1">
+        <div class="modalContentDetalheProduto">
+          <a href="#" class="modalClose" aria-label="Fechar">x</a>
+          <div>
+            <div class="detalheProdutoEsquerdo">
+              <div class="detalheProdutoTitulo">
+                Lanche de carne 1
+              </div>
+              <div class="detalheProdutoPreco">
+                R$ <span>12,34</span>
+              </div>
+              <div class="detalheProdutoDescricao">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus recusandae quae est quaerat
+                explicabo,
+                dolorem libero perspiciatis dolor, nulla provident at natus accusamus. Commodi eveniet accusantium eos
+                ex
+                consectetur tempore?
+              </div>
+              <div class="detalheProdutoInformaceosNutricionais">
+                informaçoes nutricionais <br>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorum dicta eos, impedit sint ipsam harum
+                odit
+                ex quo alias velit neque ipsum modi a asperiores, eaque, eius hic aliquam inventore!
+              </div>
+
+            </div>
+            <div class="detalheProdutoDireito">
+              <div class="detalheProdutoImagem">
+                <img class="image" src="../image/lancheCarne1.svg" alt="lanche de carne 1" />
+              </div>
+              <div class="detalheProdutoAdicionarAoCarrinho">
+                Adicionar
+              </div>
+
+            </div>
+          </div>
+          <!-- <div class="detalheProdutoAreaImagem">
+              imagem do produto
+            </div>
+            <div class="detalheProdutoArea">
+              <div>
+                <span class="tituloCardDetalheProduto">Lanche de carne 1</span>
+                <div>
+                  <span class="precoProdutoMoeda">RS</span>
+                  <span class="precoProdutoValor">12,34</span>
+                </div>
+            <div>
+              <span>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni ex cum recusandae
+                laudantium corrupti! Molestiae tenetur quis impedit id ratione dolore nobis expedita
+                aliquam minus. Odit sequi animi tempora possimus.
+              </span>
+            </div>
+          -->
+        </div>
+        <div class="detalheProdutoBotoes">
+          <div class="detalheProdutoQuantidade">
+            <div class="detalheProdutoQuantidadeDiminuir">-</div>
+            <div class="detalheProdutoQuantidadeQuantidade">1</div>
+            <div class="detalheProdutoQuantidadeAumentar">+</div>
+          </div>
+          <div class="detalheProdutoBotao">
+            <a href="#">
+              <button>
+                Adicionar ao carrinho
+              </button>
+            </a>
+          </div>
+        </div>
+      </div> -->
+      </div>
+    </section>
+
+  </main>
+  <footer>
+
+  </footer>
+</body>
+
 </html>
