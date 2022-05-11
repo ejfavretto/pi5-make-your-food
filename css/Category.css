@@ -4,33 +4,54 @@ main {
   max-width: 1200px;
 
   display: grid;
-  grid-template-columns: 200px 10px 1fr;
+  grid-template-columns: 200px 26px 1fr;
 }
 
 .separator {
+  display: block;
   background-color: rgba(226, 27, 41, 1);
   border-radius: 10px;
   width: 2px;
-  margin: 0 4px;
+  margin: 0 16px 0 8px;
 }
 
-nav {
+aside nav {
   display: flex;
   flex-direction: column;
   justify-content: center;
   gap: 0.5rem;
 }
 
-nav a {
+aside nav a {
   color: rgba(226, 27, 41, 1);
   font-weight: 600;
   padding: 0.2rem 0.5rem;
   text-decoration: none;
 }
 
-nav a:hover {
+aside nav a:hover {
   background-color: rgba(226, 27, 41, 1);
   color: rgba(255, 255, 255, 1);
   border-top-right-radius: 8px;
   border-bottom-right-radius: 8px;
+}
+
+main section {
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+@media (max-width: 768px) {
+  main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .separator {
+    display: none;
+  }
 }
