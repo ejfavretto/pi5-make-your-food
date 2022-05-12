@@ -1,0 +1,178 @@
+.modal {
+  display: none;
+}
+
+.modal:target {
+  display: flex;
+}
+
+.modal {
+  text-align: left;
+  backdrop-filter: blur(2px);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal:target {
+  justify-content: space-around;
+  align-items: center;
+}
+
+.modalContent {
+  min-width: 370px;
+  min-height: 550px;
+  position: absolute;
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 5px;
+
+  font-size: 1.5rem;
+  font-weight: 500;
+
+}
+
+.modalClose {
+  color: initial;
+  text-decoration: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 0 0.5rem;
+  display: inline-block;
+  font-size: 2.5rem;
+  font-weight: 500;
+  color: #E21B29;
+
+
+}
+
+.detalheProduto {
+  width: 95vw;
+  max-width: 800px;
+  min-height: 550px;
+  position: absolute;
+  padding: 2rem;
+  border-radius: 10px;
+
+  background-color:rgba(255, 255, 255, 0.7);
+}
+
+.detalheProduto div {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  margin-top: 20px;
+  max-height: 550px;
+}
+
+.detalheProdutoImagem {
+  flex:1;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.detalheProdutoImagem img {
+  height:350px;
+  width:auto;
+  border-radius: 40px;
+  margin-right: 20px;
+}
+
+.detalheProdutoInfo {
+  flex:1;
+  padding-bottom:20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.detalheProdutoInfo h1 {
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+.detalheProdutoInfoDescricao {
+  font-size:1rem;
+  margin-top:10px;
+}
+
+.detalheProdutoInfoPrecoAtual{
+  font-size:2rem;
+  color: #AA1A14;
+}
+
+.detalheProdutoInfoQtArea {
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  /* border: 1px solid #AA1A14; */
+  border-radius:5px;
+  height:40px;
+}
+
+.detalheProdutoInfoQt {
+  line-height: 30px;
+  font-size: 2rem;
+  padding: 0px 10px;
+  color:#000;
+}
+
+.detalheProdutoInfoAdicionar {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.detalheProdutoInfoQtMenos, .detalheProdutoInfoQtMais {
+  border:0;
+  background-color:transparent;
+  font-size:2rem;
+  cursor:pointer;
+  padding:0px 10px;
+  color:#000;
+  background-color:transparent;
+  color:#FFF;
+  display:inline-block;
+  cursor:pointer; 
+  line-height: 30px;
+
+
+}
+.detalheProdutoInfoQtMenos {
+  color: #E21B29;
+} 
+.detalheProdutoInfoQtMais {
+  color: #32a345;
+}
+
+.detalheProdutoInfoBotaoAdicionar {
+  padding:20px 30px;
+  border-radius:10px;
+  background-color: #E21B29;
+  color:#FFF;
+  cursor:pointer;
+  margin-right:10px;
+}
+
+
+@media (max-width: 768px) {
+  .categories {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .categories .card {
+    margin: 0;
+    margin-top: 20px;
+    border-radius: 20px;
+    width: 90vw;
+    
+  }
+}
