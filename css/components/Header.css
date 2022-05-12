@@ -6,19 +6,10 @@
 }
 
 header {
+  height: 70px;
+  margin-bottom: 32px;
   width: 100%;
   box-shadow: 0px 12px 8px -15px rgba(226, 27, 41, 1);
-}
-
-.container {
-  height: 70px;
-  width: 95%;
-  margin: 0 auto 32px auto;
-  max-width: 1200px;
-
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
 }
 
 .logo {
