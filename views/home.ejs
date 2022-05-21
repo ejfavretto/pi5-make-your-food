@@ -1,0 +1,89 @@
+<%- include('./partials/head') %>
+
+  <header>
+    <div class="container">
+      <div>
+        <a href="#" class="logo">MakeYourFood</a>
+      </div>
+
+      <div class="search">
+        <form>
+          <span><i class="fa-solid fa-magnifying-glass"></i></span>
+          <input type="text" name="search" id="search" placeholder="Buscar seu Lanche" />
+        </form>
+      </div>
+
+      <div class="buttonDesktop">
+        <button class="buttonWithoutBackground">criar conta</button>
+        <button class="buttonWithBackground">Entrar</button>
+      </div>
+
+      <div class="buttonMobile">
+        <button class="buttonWithBackground">Entrar</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- <h1>Categorias</h1>
+  <table>
+    <thead>
+      <tr>
+        <th>Id</th>
+        <th>Descrição</th>
+      </tr>
+    </thead>
+    <tbody>
+      <% categorias.forEach(function(categoria) { %>
+        <tr>
+
+          <td>
+            <%= categoria.id %>
+          </td>
+          <td>
+            <%= categoria.nome %>
+          </td>
+        </tr>
+        <% }); %>
+    </tbody>
+  </table> -->
+
+  <main>
+    <section class="banner">
+    </section>
+
+    <section class="categories">
+      <% categorias.forEach(function(categoria) { %>
+        <a href="/categories">
+          <div class="card cardCarne">
+            <span class="cardTitle">
+              <%= categoria.nome %>
+            </span>
+          </div>
+        </a>
+        <% }); %>
+
+
+          <!-- <a href="Category.html">
+        <div class="card cardCarne">
+          <span class="cardTitle">Lanches de carne</span>
+        </div>
+      </a>
+      <a href="Category.html">
+        <div class="card cardFrango">
+          <span class="cardTitle">Lanches de frango</span>
+        </div>
+      </a>
+      <a href="Category.html">
+        <div class="card cardVegetariano">
+          <span class="cardTitle">Lanches vegetarianos</span>
+        </div>
+      </a>
+      <a href="Category.html">
+        <div class="card cardFit">
+          <span class="cardTitle">Linha fit</span>
+        </div>
+      </a> -->
+    </section>
+  </main>
+
+  <%- include('./partials/footer') %>

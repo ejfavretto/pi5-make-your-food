@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1,
+    "nome": "Lanches de carne",
+    "ativo": true
+  },
+  {
+    "id": 2,
+    "nome": "Lanches de frango",
+    "ativo": true
+  },
+  {
+    "id": 3,
+    "nome": "Lanches vegetarianos",
+    "ativo": true
+  },
+  {
+    "id": 4,
+    "nome": "Linha fit",
+    "ativo": true
+  },
+  {
+    "id": 5,
+    "nome": "Pizzas",
+    "ativo": false
+  },
+  {
+    "id": 6,
+    "nome": "Bebidas",
+    "ativo": true
+  },
+  {
+    "id": 7,
+    "nome": "Doces",
+    "ativo": false
+  }
+
+]
