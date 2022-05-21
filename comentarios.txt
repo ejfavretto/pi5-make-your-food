@@ -1,0 +1,27 @@
+22222222222
+
+<!-- <h1>Categorias</h1>
+  <table>
+    <thead>
+      <tr>
+        <th>Id</th>
+        <th>Descrição</th>
+      </tr>
+    </thead>
+    <tbody>
+      <% categorias.forEach(function(categoria) { %>
+        <tr>
+
+          <td>
+            <%= categoria.id %>
+          </td>
+          <td>
+            <%= categoria.nome %>
+          </td>
+        </tr>
+        <% }); %>
+    </tbody>
+  </table> -->
+
+
+1111111

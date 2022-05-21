@@ -1,0 +1,170 @@
+<%- include('./partials/head') %>
+  <link rel="stylesheet" href="/stylesheet/components/header.css" />
+  <link rel="stylesheet" href="/stylesheet/components/footer.css" />
+  <link rel="stylesheet" href="/stylesheet/components/card.css" />
+  <link rel="stylesheet" href="/stylesheet/components/modalProduct.css" />
+  <link rel="stylesheet" href="/stylesheet/global.css" />
+  <link rel="stylesheet" href="/stylesheet/index.css" />
+  <link rel="stylesheet" href="/stylesheet/category.css" />
+  </head>
+
+  <body>
+
+    <%- include('./partials/header') %>
+
+      <main>
+        <aside>
+          <nav>
+            <a href="?search=todos">Todos</a>
+            <a href="?search=lanches+de+carne">Lanches de Carne</a>
+            <a href="?search=lanches+de+frango">Lanches de Frango</a>
+            <a href="?search=lanches+de+vegano">Lanches de Vegano</a>
+            <a href="?search=lanches+de+fitness">Lanches de Fitness</a>
+          </nav>
+        </aside>
+
+        <div class="separator"></div>
+
+        <section>
+          <div class="card">
+            <div>
+              <a href="#detalheProduto">
+                <img src="https://veja.abril.com.br/wp-content/uploads/2020/09/Whooper.jpg" alt="" />
+              </a>
+            </div>
+
+            <div class="details">
+              <div>
+                <h3>Hambúrguer</h3>
+                <p>O melhor lanche do país, venha provar</p>
+              </div>
+              <button>Adicionar</button>
+            </div>
+          </div>
+
+          <div class="card">
+            <div>
+              <a href="#detalheProduto">
+                <img src="https://veja.abril.com.br/wp-content/uploads/2020/09/Whooper.jpg" alt="" />
+              </a>
+            </div>
+
+            <div class="details">
+              <div>
+                <h3>Hambúrguer</h3>
+                <p>O melhor lanche do país, venha provar</p>
+              </div>
+              <button>Adicionar</button>
+            </div>
+          </div>
+
+          <div class="card">
+            <div>
+              <a href="#detalheProduto">
+                <img src="https://veja.abril.com.br/wp-content/uploads/2020/09/Whooper.jpg" alt="" />
+              </a>
+            </div>
+
+            <div class="details">
+              <div>
+                <h3>Hambúrguer</h3>
+                <p>O melhor lanche do país, venha provar</p>
+              </div>
+              <button>Adicionar</button>
+            </div>
+          </div>
+
+          <div class="card">
+            <div>
+              <a href="#detalheProduto">
+                <img src="https://veja.abril.com.br/wp-content/uploads/2020/09/Whooper.jpg" alt="" />
+              </a>
+            </div>
+
+            <div class="details">
+              <div>
+                <h3>Hambúrguer</h3>
+                <p>O melhor lanche do país, venha provar</p>
+              </div>
+              <button>Adicionar</button>
+            </div>
+          </div>
+
+          <div class="card">
+            <div>
+              <a href="#detalheProduto">
+                <img src="https://veja.abril.com.br/wp-content/uploads/2020/09/Whooper.jpg" alt="" />
+              </a>
+            </div>
+
+            <div class="details">
+              <div>
+                <h3>Hambúrguer</h3>
+                <p>O melhor lanche do país, venha provar</p>
+              </div>
+              <button>Adicionar</button>
+            </div>
+          </div>
+
+          <div class="card">
+            <div>
+              <a href="#detalheProduto">
+                <img src="https://veja.abril.com.br/wp-content/uploads/2020/09/Whooper.jpg" alt="" />
+              </a>
+            </div>
+
+            <div class="details">
+              <div>
+                <h3>Hambúrguer</h3>
+                <p>O melhor lanche do país, venha provar</p>
+              </div>
+              <button>Adicionar</button>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <!-- detalhe do produto -->
+      <section>
+        <div class="modal" id="detalheProduto" tabindex="-1">
+          <div class="detalheProduto">
+            <a href="#" class="modalClose" aria-label="Fechar">x</a>
+            <div>
+              <div class="detalheProdutoImagem">
+                <img src="https://i.pinimg.com/564x/b7/c4/c5/b7c4c58c605199d6c882c34330b9a14d.jpg"
+                  alt="lanche de carne 1" />
+              </div>
+              <div class="detalheProdutoInfo">
+                <h1>Lanche de carne 1</h1>
+                <div class="detalheProdutoInfoDescricao">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quis,
+                  dolores! Nihil fugit fugiat, laudantium pariatur voluptates unde
+                  corrupti velit, voluptatibus aliquam repellat qui officiis dicta
+                  quam necessitatibus saepe repellendus natus.
+                </div>
+                <div class="detalheProdutoInfoPrecoArea">
+                  <div class="detalheProdutoInfoPreco">
+                    <div class="detalheProdutoInfoPrecoAtual">R$ 12,34</div>
+                  </div>
+                </div>
+
+                <div class="detalheProdutoInfoAdicionar">
+                  <div>
+                    <div class="detalheProdutoInfoQtMenos">-</div>
+                    <div class="detalheProdutoInfoQt">1</div>
+                    <div class="detalheProdutoInfoQtMais">+</div>
+                  </div>
+                  <div class="detalheProdutoInfoBotaoAdicionar">
+                    Adicionar ao carrinho
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <%- include('./partials/footer') %>
+  </body>
+
+  </html>

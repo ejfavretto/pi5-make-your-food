@@ -6,7 +6,7 @@ const categoriasController = {
       categoria => categoria.ativo == true
     )
     console.log('Rota categorias home ', categoriasAtivas)
-    res.render('home', { categorias: categoriasAtivas })
+    res.render('category', { categorias: categoriasAtivas })
   },
   categoriesView: (req, res) => {
     res.render('categories', { teste: 'catetegorias' })

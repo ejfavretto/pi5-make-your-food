@@ -3,70 +3,28 @@
   <link rel="stylesheet" href="/stylesheet/components/footer.css" />
   <link rel="stylesheet" href="/stylesheet/global.css" />
   <link rel="stylesheet" href="/stylesheet/home.css" />
-</head>
+  </head>
 
-<body>
-  <%- include('./partials/header') %>
-
-  <!-- <h1>Categorias</h1>
-  <table>
-    <thead>
-      <tr>
-        <th>Id</th>
-        <th>Descrição</th>
-      </tr>
-    </thead>
-    <tbody>
-      <% categorias.forEach(function(categoria) { %>
-        <tr>
-
-          <td>
-            <%= categoria.id %>
-          </td>
-          <td>
-            <%= categoria.nome %>
-          </td>
-        </tr>
-        <% }); %>
-    </tbody>
-  </table> -->
-
-  <main>
-    <section class="banner"></section>
-
-    <section class="categories">
-      <% categorias.forEach(function(categoria) { %>
-        <a href="/categories">
-          <div class="card cardCarne">
-            <span class="cardTitle">
-              <%= categoria.nome %>
-            </span>
-          </div>
-        </a>
-        <% }); %>
+  <body>
+    <%- include('./partials/header') %>
 
 
-          <!-- <a href="Category.html">
-        <div class="card cardCarne">
-          <span class="cardTitle">Lanches de carne</span>
-        </div>
-      </a>
-      <a href="Category.html">
-        <div class="card cardFrango">
-          <span class="cardTitle">Lanches de frango</span>
-        </div>
-      </a>
-      <a href="Category.html">
-        <div class="card cardVegetariano">
-          <span class="cardTitle">Lanches vegetarianos</span>
-        </div>
-      </a>
-      <a href="Category.html">
-        <div class="card cardFit">
-          <span class="cardTitle">Linha fit</span>
-        </div>
-      </a> -->
-    </section>
-  </main>
+      <main>
+        <section class="banner"></section>
 
-  <%- include('./partials/footer') %>
+        <section class="categories">
+          <% categorias.forEach(function(categoria) { %>
+            <a href="/categories">
+              <div class="card cardCarne">
+                <span class="cardTitle">
+                  <%= categoria.nome %>
+                </span>
+              </div>
+            </a>
+            <% }); %>
+        </section>
+      </main>
+      <%- include('./partials/footer') %>
+  </body>
+
+  </html>
