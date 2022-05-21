@@ -1,28 +1,12 @@
 <%- include('./partials/head') %>
+  <link rel="stylesheet" href="/stylesheet/components/header.css" />
+  <link rel="stylesheet" href="/stylesheet/components/footer.css" />
+  <link rel="stylesheet" href="/stylesheet/global.css" />
+  <link rel="stylesheet" href="/stylesheet/home.css" />
+</head>
 
-  <header>
-    <div class="container">
-      <div>
-        <a href="#" class="logo">MakeYourFood</a>
-      </div>
-
-      <div class="search">
-        <form>
-          <span><i class="fa-solid fa-magnifying-glass"></i></span>
-          <input type="text" name="search" id="search" placeholder="Buscar seu Lanche" />
-        </form>
-      </div>
-
-      <div class="buttonDesktop">
-        <button class="buttonWithoutBackground">criar conta</button>
-        <button class="buttonWithBackground">Entrar</button>
-      </div>
-
-      <div class="buttonMobile">
-        <button class="buttonWithBackground">Entrar</button>
-      </div>
-    </div>
-  </header>
+<body>
+  <%- include('./partials/header') %>
 
   <!-- <h1>Categorias</h1>
   <table>
@@ -48,8 +32,7 @@
   </table> -->
 
   <main>
-    <section class="banner">
-    </section>
+    <section class="banner"></section>
 
     <section class="categories">
       <% categorias.forEach(function(categoria) { %>
