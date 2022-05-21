@@ -1,6 +1,6 @@
 const categorias = require('../databases/categorias.json')
 
-const CategoriasController = {
+const categoriasController = {
   index: (req, res) => {
     let categoriasAtivas = categorias.filter(
       categoria => categoria.ativo == true
@@ -13,4 +13,4 @@ const CategoriasController = {
   }
 }
 
-module.exports = CategoriasController
+module.exports = categoriasController
