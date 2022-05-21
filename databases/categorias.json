@@ -17,7 +17,7 @@
   {
     "id": 4,
     "nome": "Linha fit",
-    "ativo": true
+    "ativo": false
   },
   {
     "id": 5,
@@ -27,7 +27,7 @@
   {
     "id": 6,
     "nome": "Bebidas",
-    "ativo": true
+    "ativo": false
   },
   {
     "id": 7,
