@@ -190,69 +190,6 @@ a {
   /* padding: 10px; */
 }
 
-
-/* .detalheProdutoDescricao {
-  background-color: aquamarine;
-} */
-
-/* .detalheProdutoArea div{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
-} */
-
-/* .detalhe-produto-area img {
-  min-width: 100px;
-  min-height: 100px;
-} */
-
-/* .detalhe-produto-botoes{
-  // position: relative;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  // background-color: #3bb54a;
-} */
-
-/* .detalhe-produto-botao {
-  width: 300px;
-  //position: absolute;
-  //right: 0px;
-  //bottom: 0px;
-} */
-
-/* .detalhe-produto-quantidade{
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  border: 1px solid #FF0000;
-  max-width: 100px;
-  min-height: 40px;
-  border-radius: 5px;
-}
- */
-/* .detalhe-produto-quantidade-diminuir {
-  color: red;
-  font-size: 24px;
-} */
-
-/* .detalhe-produto-quantidade-quantidade {
-  color: blue;
-  font-size: 24px;
-} */
-
-/* .detalhe-produto-quantidade-aumentar {
-  color: green;
-  font-size: 24px;
-} */
-
-/* quantidades {
-  background-color: #b3404a;
-} */
-
-
-
 @media (max-width: 768px) {
   .categories {
     display: flex;
