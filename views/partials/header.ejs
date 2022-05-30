@@ -14,77 +14,78 @@
 
     <div class="buttonDesktop">
 
-      <div class="cart" onclick="cartToggle();">
-        <i class="fa-solid fa-bag-shopping"></i>
-        <span>&#36; 0,00</span>
+      <div>
+        <div class="cart" onclick="cartToggle();">
+          <i class="fa-solid fa-bag-shopping"></i>
+          <span>&#36; 0,00</span>
+        </div>
+
+        <div class="cartModal">
+          <div class="cartModalDetail">
+            <h3>Detalhe do pedido</h3>
+            <p>xxxx</p>
+            <p>xxxx</p>
+            <p>xxxx</p>
+            <h3>Total</h3>
+          </div>
+        </div>
       </div>
 
       <div>
+        <div>
+          <div class="user" onclick="profileToggle();">
+            <img src="https://loremflickr.com/100/100" alt="img01" />
+          </div>
 
-        <div class="user" onclick="userProfileToggle();">
-          <img src="https://loremflickr.com/100/100" alt="img01" />
+          <div class="profileModal">
+            <div class="menu">
+              <h3>Alguém do Mundo
+                <br>
+                <span>...</span>
+              </h3>
+              <ul>
+                <li>
+                  <img src="../image/login.svg" alt="login">
+
+                  <a href="/login">
+                    <span class="signin">Faça seu login</span>
+                  </a>
+                </li>
+
+                <li><img src="../image//profile.svg" alt="profile"><a href="/user">Minha conta</a></li>
+
+                <li><img src="../image/historic.svg" alt="historic"><a href="/user">Meus pedidos</a></li>
+
+                <li><img src="../image/address.svg" alt="address"><a href="#user">Endereço</a></li>
+
+                <li><img src="../image/creditCard.svg" alt="credit card"><a href="#user">Cartões</a></li>
+
+                <li><img src="../image/help.svg" alt="help"><a href="/user">Fale conosco</a></li>
+
+                <li><img src="../image/settings.svg" alt="settings"><a href="#">Configurações</a></li>
+
+                <!-- <li><img src="../image/logout.svg" alt="logout"><a href="/login">Sair</a></li> -->
+              </ul>
+            </div>
+          </div>
         </div>
-
-        <!-- <i class="fa-solid fa-circle-user"></i> -->
-        <!-- <details>
-          <summary>Seu nome</summary>
-          <p>login</p>
-          <p>cadastro</p>
-        </details> -->
       </div>
     </div>
   </div>
 
-  <div class="profileModal">
-    <div class="menu">
-      <h3>Alguém do Mundo
-        <br>
-        <span>...</span>
-      </h3>
-      <ul>
-        <li><img src="../image/login.svg" alt="login">
-          <a href="/login">
-            <span class="signin">Faça seu login</span>
-            <br>
-          </a>
-        </li>
-        <li>
-          <p>Cliente novo? <span class="signup">&nbsp;Cadastre-se!</span></p>
-        </li>
-
-        <li><img src="../image//profile.svg" alt="profile"><a href="/user">Minha conta</a></li>
-        <li><img src="../image/historic.svg" alt="historic"><a href="/user">Meus pedidos</a></li>
-        <li><img src="../image/address.svg" alt="address"><a href="#user">Endereço</a></li>
-        <li><img src="../image/creditCard.svg" alt="credit card"><a href="#user">Cartões</a></li>
-        <li><img src="../image/help.svg" alt="help"><a href="/user">Fale conosco</a></li>
-        <li><img src="../image/settings.svg" alt="settings"><a href="#">Configurações</a></li>
-        <li><img src="../image/logout.svg" alt="logout"><a href="/login">Sair</a></li>
-      </ul>
-    </div>
-  </div>
-
-  <div class="cartModal">
-    <div class="cartModalDetail">
-      <h3>Detalhe do pedido</h3>
-      <p>xxxx</p>
-      <p>xxxx</p>
-      <p>xxxx</p>
-      <h3>Total</h3>
-    </div>
-  </div>
-
+  <!-- script toggle menu -->
   <script>
-    function userProfileToggle() {
-      const toggleMenu = document.querySelector('.menu');
-      toggleMenu.classList.toggle('active');
+    const profile = document.querySelector('.menu');
+    const cart = document.querySelector('.cartModalDetail')
+
+    function profileToggle() {
+      profile.classList.toggle('active')
+      cart.classList.remove('active')
     }
 
     function cartToggle() {
-      const toggleMenu = document.querySelector('.cartModalDetail');
-      toggleMenu.classList.toggle('active');
+      profile.classList.remove('active')
+      cart.classList.toggle('active')
     }
-
   </script>
-
-
 </header>
