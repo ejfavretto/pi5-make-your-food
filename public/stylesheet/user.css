@@ -1,0 +1,317 @@
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+main h2 {
+  font-size: 1.2rem;
+  margin-bottom: 3rem;
+} 
+
+/* login - inicio */
+.mainLogin {
+  width: 95%;
+  max-width: 600px;
+  display: flex;
+  justify-content: center;
+}
+
+.mainLogin .divisao{
+  border-right: 1px solid  #000;;
+}
+
+.minhaContaLogin, .minhaContaCadastrese  {
+  width: 95%;
+  max-width: 600px;
+  height: 100%;
+}
+
+.minhaContaLogin form, .minhaContaCadastrese form {
+  width: 100%;
+  height: 100%;
+  padding: 0 10px;
+  display: flex;  
+  flex-direction: column;
+}
+
+.minhaContaLogin form .input-group, .minhaContaCadastrese form .input-group {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  margin-bottom: 10px;
+  width: 100%;
+}
+
+.minhaContaLogin form .input-group input, .minhaContaCadastrese .input-group input{
+  margin: 0.6rem 0;
+  padding: 0.6rem 1rem;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 1px 1px 6px #0000001c;
+  outline: none;
+  width: 100%;
+}
+
+.minhaContaLogin form .formBotoes, .minhaContaCadastrese form .formBotoes{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  align-items: center;
+  border: 1px solid #C4C4C4;
+  padding: 0.8rem;
+  margin-top: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.minhaContaLogin form .formBotoes:hover, .minhaContaCadastrese form .formBotoes:hover {
+  background-color: rgba(226, 27, 41, 0.2);
+  color: #FFFFFF;
+  border: none;
+}
+
+.minhaContaDados .alterarSenha{
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 100%;
+  padding: 20px;
+  color: #C4C4C4;
+  cursor: pointer;
+}
+
+/* login - termino */
+
+/* edit user - inicio  */
+
+.mainEditUser {
+  width: 95%;
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.dadosUsuario {
+  width: 100%;
+  height: 100%;
+}
+
+.dadosUsuario form {
+  width: 100%;
+  height: 100%;
+  padding: 0 10px;
+  display: flex;  
+  flex-direction: column;
+}
+
+.dadosUsuario form .input-group {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  margin-bottom: 10px;
+  width: 100%;
+}
+
+.dadosUsuario form .input-group input {
+  margin: 0.6rem 0;
+  padding: 0.6rem 1rem;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 1px 1px 6px #0000001c;
+  outline: none;
+  width: 100%;
+}
+
+.dadosUsuario form .formBotoes{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  align-items: center;
+  border: 1px solid #C4C4C4;
+  padding: 0.8rem;
+  margin-top: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.dadosUsuario form .formBotoes:hover {
+  background-color: rgba(226, 27, 41, 0.2);
+  color: #FFFFFF;
+  border: none;
+}
+
+.dadosUsuario .alterarSenha{
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  color: #C4C4C4;
+  cursor: pointer;
+  width: 100%;
+  height: 100%;
+  padding: 40px;
+
+}
+
+.cardsUsuario {
+  width: 95%;
+  max-width: 1200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;  
+}
+
+.cardsUsuario .cardsUsuarioEnderecos, .cardsUsuarioCartoes {
+  width: 95%;
+  max-width: 600px;
+  height: 5rem;
+  border: 1px solid #C4C4C4;
+  border-radius: 20px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* edit user - termino */
+
+
+
+/*
+.minhaContaCards {
+  width: 50%;
+  height: 100%;
+}
+
+.minhaContaCards .enderecos, .minhaContaCards .cartoes {
+ border: 1px solid #C4C4C4;
+  border-radius: 20px;
+  margin: 10px;
+  display: flex;
+  justify-content: center;
+  height: 150px;
+}
+
+.enderecos h3, .cartoes h3 {
+  padding: 10px;
+}
+
+form .input-group {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  margin-bottom: 10px;
+  width: 100%;
+}
+
+form .input-group input{
+  margin: 0.6rem 0;
+  padding: 0.8rem 1.2rem;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 1px 1px 6px #0000001c;
+  outline: none;
+  width: 100%;
+}
+
+.formBotoes {
+  display: flex;
+  justify-content: space-between;
+}
+*/
+
+/* edit password - inicio  */
+
+.mainEditPassword {
+  width: 95%;
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.dadosSenha {
+  width: 100%;
+  height: 100%;
+}
+.dadosSenha form {
+  width: 100%;
+  height: 100%;
+  padding: 0 10px;
+  display: flex;  
+  flex-direction: column;
+}
+
+.dadosSenha form .input-group {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  margin-bottom: 10px;
+  width: 100%;
+}
+
+.dadosSenha form .input-group input {
+  margin: 0.6rem 0;
+  padding: 0.6rem 1rem;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 1px 1px 6px #0000001c;
+  outline: none;
+  width: 100%;
+}
+
+.dadosSenha form .formBotoes{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  align-items: center;
+  /* border: 1px solid #C4C4C4; */
+  /* padding: 0.8rem;
+  margin-top: 10px ;
+  border-radius: 5px;
+  cursor: pointer; */
+}
+
+.dadosSenha form .formBotoes button{
+  /* display: flex;
+  justify-content: center; */
+  width: 100%;
+  /* align-items: center; */
+  border: 1px solid #C4C4C4;
+  padding: 0.8rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.dadosSenha form .formBotoes .enviar{
+  margin-right: 0.8rem;
+
+}
+
+.dadosSenha form .formBotoes .cancelar{
+  margin-left: 0.8rem;
+  background-color: rgba(226, 27, 41, 0.2);;
+}
+
+/* .dadosSenha form .formBotoes button{
+  background-color: red;
+} */
+
+/* .dadosSenha form .formBotoes button:hover {
+  background-color: rgba(226, 27, 41, 0.2);
+  color: #FFFFFF;
+  border: none;
+  margin: 0 1rem;
+} */
+
+/* edit password - termino  */

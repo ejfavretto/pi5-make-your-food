@@ -1,0 +1,47 @@
+<%- include('../partials/head') %>
+  <link rel="stylesheet" href="/stylesheet/components/header.css" />
+  <link rel="stylesheet" href="/stylesheet/components/footer.css" />
+  <link rel="stylesheet" href="/stylesheet/global.css" />
+  <link rel="stylesheet" href="/stylesheet/user.css" />
+  </head>
+
+  <body>
+    <%- include('../partials/header') %>
+
+
+      <main>
+        <h2>Minha conta</h2>
+
+        <div class="mainEditUser">
+          <div class="dadosUsuario">
+            <form action="/user/updateUser" method="post" enctype="multipart/form-data">
+              <div class="input-group">
+                <label for="nome">Nome</label>
+                <input type="text" id="nome" name="nome" required>
+              </div>
+              <div class="input-group">
+                <label for="email">e-mail</label>
+                <input type="email" id="email" name="email" required>
+              </div>
+              <div class="formBotoes">
+                <button type="submit">Enviar</button>
+              </div>
+            </form>
+            <div class="alterarSenha">
+              <a href="/user/editPassword"><i class="fa-solid fa-lock"></i>&nbsp;&nbsp;Alterar Senha</a>
+            </div>
+          </div>
+          <div class="cardsUsuario">
+            <div class="cardsUsuarioEnderecos">
+              <h3>Endereços</h3>
+            </div>
+            <div class="cardsUsuarioCartoes">
+              <h3>Cartões</h3>
+            </div>
+          </div>
+        </div>
+      </main>
+      <%- include('../partials/footer') %>
+  </body>
+
+  </html>
