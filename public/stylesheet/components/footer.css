@@ -1,6 +1,6 @@
 footer {
   position: relative;
-  bottom: -120px;
+  bottom: 0;
 
   background-color: rgba(8, 0, 0, 1);
   height: 120px;
@@ -17,7 +17,6 @@ footer {
   color: rgba(255, 255, 255, 1);
   font-size: 0.95rem;
 }
-
 
 .contacts i {
   font-size: 1rem;
