@@ -1,0 +1,22 @@
+<%- include('../partials/head') %>
+  <link rel="stylesheet" href="/stylesheet/components/header.css" />
+  <link rel="stylesheet" href="/stylesheet/components/footer.css" />
+  <link rel="stylesheet" href="/stylesheet/global.css" />
+  <link rel="stylesheet" href="/stylesheet/user.css" />
+  </head>
+
+  <body>
+    <%- include('../partials/header') %>
+
+
+      <main>
+        <h2>Usuario logado <%= usuarioLogado %>
+        </h2>
+
+        <a href="/user/userLogin"><span>Ir para a tela de login</span></a>
+
+      </main>
+      <%- include('../partials/footer') %>
+  </body>
+
+  </html>
