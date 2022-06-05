@@ -73,7 +73,7 @@ main h2 {
   border: none;
 }
 
-.minhaContaDados .alterarSenha{
+/* .minhaContaDados .alterarSenha{
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
@@ -81,7 +81,7 @@ main h2 {
   padding: 20px;
   color: #C4C4C4;
   cursor: pointer;
-}
+} */
 
 /* login - termino */
 
@@ -150,17 +150,18 @@ main h2 {
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
-  color: #C4C4C4;
   cursor: pointer;
   width: 100%;
   height: 100%;
-  padding: 40px;
+  margin: 20px 0;
+  padding: 0.8rem;
+
 
 }
 
 .cardsUsuario {
-  width: 95%;
-  max-width: 1200px;
+  width: 100%;
+  max-width: 600px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -169,7 +170,7 @@ main h2 {
 }
 
 .cardsUsuario .cardsUsuarioEnderecos, .cardsUsuarioCartoes {
-  width: 95%;
+  width: 100%;
   max-width: 600px;
   height: 5rem;
   border: 1px solid #C4C4C4;
@@ -183,50 +184,80 @@ main h2 {
 /* edit user - termino */
 
 
+/* orders - inicio */
 
-/*
-.minhaContaCards {
-  width: 50%;
-  height: 100%;
-}
-
-.minhaContaCards .enderecos, .minhaContaCards .cartoes {
- border: 1px solid #C4C4C4;
-  border-radius: 20px;
-  margin: 10px;
-  display: flex;
-  justify-content: center;
-  height: 150px;
-}
-
-.enderecos h3, .cartoes h3 {
-  padding: 10px;
-}
-
-form .input-group {
+.mainPedidos {
+  width: 95%;
+  max-width: 600px  ;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
   justify-content: center;
-  margin-bottom: 10px;
-  width: 100%;
+  align-items: center;
 }
 
-form .input-group input{
-  margin: 0.6rem 0;
-  padding: 0.8rem 1.2rem;
-  border: none;
-  border-radius: 5px;
-  box-shadow: 1px 1px 6px #0000001c;
-  outline: none;
+.cardsPedidos {
   width: 100%;
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;  
 }
 
-.formBotoes {
+.cardsPedidosPedido {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  border: 1px solid #C4C4C4;
+  border-radius: 20px;
+  margin-bottom: 20px;
+
+}
+
+.detalhePedido, .detalhePagamento {
+  width: 100%;
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 0.8rem;
+  margin-top: 10px;
+
+  border-bottom: 1px solid #C4C4C4;
+}
+
+.detalhePedido .pedido {
+  color: #C4C4C4;
+  font-size: 0.8rem;
+}
+
+.formaPagamento {
+  color: #C4C4C4;
+}
+
+.formaPagamento, .valorPedido {
+  width: 100%;
+  max-width: 600px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
 }
-*/
+
+.valorPedido .valorTotal {
+  font-weight: 700;
+}
+
+
+/* orders - termino */
+
 
 /* edit password - inicio  */
 
@@ -302,16 +333,5 @@ form .input-group input{
   margin-left: 0.8rem;
   background-color: rgba(226, 27, 41, 0.2);;
 }
-
-/* .dadosSenha form .formBotoes button{
-  background-color: red;
-} */
-
-/* .dadosSenha form .formBotoes button:hover {
-  background-color: rgba(226, 27, 41, 0.2);
-  color: #FFFFFF;
-  border: none;
-  margin: 0 1rem;
-} */
 
 /* edit password - termino  */

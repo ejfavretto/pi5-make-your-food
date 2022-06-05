@@ -1,4 +1,5 @@
 const controllerUser = require('../controllers/controllerUser')
+const controllerOrder = require('../controllers/controllerOrder')
 
 const express = require('express')
 const router = express.Router()
@@ -19,5 +20,7 @@ router.post('/user/userLogged', controllerUser.userLogged)
 
 router.get('/user/userSignUp', controllerUser.userSignUp)
 router.post('/user/userCreated', controllerUser.userCreated)
+
+router.get('/user/orders', controllerOrder.index)
 
 module.exports = router
