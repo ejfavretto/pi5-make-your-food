@@ -13,9 +13,14 @@ const controllerUser = {
     res.render('users/editUser', {})
   },
   updateUser: (req, res) => {
-    res.render('users/updateUser', {
-      message: `Usuário alterado com sucesso!`
-    })
+    // res.render('users/updateUser', {
+    //   message: `Usuário alterado com sucesso!`
+    // })
+    console.log('update user')
+    console.log(
+      'alterados dados do usuario e redirecionada para a tela de login'
+    )
+    res.redirect('/')
   },
   editPassword: (req, res) => {
     console.log('edit Password')
@@ -24,7 +29,7 @@ const controllerUser = {
   updatePassword: (req, res) => {
     console.log('update Password')
     console.log('alterada a senha e redirecionada para a tela de login')
-    res.render('users/userSignIn', { usuarioLogado: 'Nome Usuário' })
+    res.redirect('/')
   },
   destroy: (req, res) => {},
   userSignIn: (req, res) => {
@@ -44,7 +49,30 @@ const controllerUser = {
     console.log(
       'userCreated - redirecionando para a tela de login após criar a conta'
     )
-    res.render('users/userSignIn', {})
+    //res.render('users/userSignIn', {})
+    res.redirect('/')
+  },
+  addressEdit: (req, res) => {
+    console.log('addressEdit - enderecos do usuario')
+
+    const enderecos = require('../databases/userAddresses.json')
+
+    res.render('users/userAddress', { enderecos })
+  },
+  addressUpdate: (req, res) => {
+    console.log('addressEdit - enderecos do usuario alterado')
+    res.render('users/editUser', {})
+  },
+  creditCardEdit: (req, res) => {
+    console.log(' creditCartEdit - edit')
+
+    const cartoes = require('../databases/userCreditCards.json')
+
+    res.render('users/userCreditCard', { cartoes })
+  },
+  creditCardUpdate: (req, res) => {
+    console.log(' creditCartUpdate - update')
+    res.render('users/userCreditCard', {})
   }
 }
 

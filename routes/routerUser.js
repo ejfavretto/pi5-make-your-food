@@ -23,4 +23,10 @@ router.post('/user/userCreated', controllerUser.userCreated)
 
 router.get('/user/orders', controllerOrder.index)
 
+router.get('/user/address', controllerUser.addressEdit)
+router.post('/user/address', controllerUser.addressUpdate)
+
+router.get('/user/creditCard', controllerUser.creditCardEdit)
+router.post('/user/creditCard', controllerUser.creditCardUpdate)
+
 module.exports = router

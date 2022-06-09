@@ -1,0 +1,22 @@
+[
+  {
+    "cep": "89802-500",
+    "logradouro": "Rua Uruguai - D",
+    "complemento": "",
+    "numero": 111,
+    "bairro": "Centro",
+    "cidade": "Chapecó",
+    "uf": "SC",
+    "enderecoPadrao":true
+  },
+  {
+    "cep": "13209-690",
+    "logradouro": "Rua Professor José Leme do Prado",
+    "numero": 222,
+    "complemento": "Casa",
+    "bairro": "Jardim Primavera",
+    "cidade": "Jundiaí",
+    "uf": "SP",
+    "enderecoPadrao":false
+  }  
+]

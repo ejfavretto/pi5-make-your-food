@@ -230,12 +230,14 @@ main h2 {
   padding: 0.8rem;
   margin-top: 10px;
 
-  border-bottom: 1px solid #C4C4C4;
 }
 
 .detalhePedido .pedido {
+  width: 100%;
+  max-width: 600px;
   color: #C4C4C4;
   font-size: 0.8rem;
+  border-bottom: 1px solid #C4C4C4;
 }
 
 .formaPagamento {
@@ -335,3 +337,83 @@ main h2 {
 }
 
 /* edit password - termino  */
+
+
+/* enderecos - inicio */
+
+.mainEnderecos {
+  width: 95%;
+  max-width: 600px  ;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.cardsEnderecos {
+  width: 100%;
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;  
+}
+
+.cardsEnderecosEndereco {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  width: 100%;
+  max-width: 450px;
+  min-height: 100px;
+  border: 1px solid #C4C4C4;
+  border-radius: 20px;
+  margin-bottom: 20px;
+
+}
+
+
+/* enderecos - termino */
+
+
+/* cartoes - inicio */
+
+.mainCartoes {
+  width: 95%;
+  max-width: 600px  ;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.cardsCartoes {
+  width: 100%;
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;  
+}
+
+.cardsCartoesCartao {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  width: 100%;
+  max-width: 450px;
+  min-height: 100px;
+  border: 1px solid #C4C4C4;
+  border-radius: 20px;
+  margin-bottom: 20px;
+
+}
+
+
+/* enderecos - termino */
