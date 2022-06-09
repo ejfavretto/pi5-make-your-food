@@ -18,3 +18,80 @@ body {
   align-items: center;
   justify-content: space-between;
 }
+
+/* carrinho de compras - inicio */
+
+.mainOrders {
+  width: 95%;
+  max-width: 600px  ;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.cardsOrders {
+  width: 100%;
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;  
+}
+
+.cardsOrdersOrder {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  border: 1px solid #C4C4C4;
+  border-radius: 20px;
+  margin-bottom: 20px;
+
+}
+
+.cardsOrdersOrderDetail, .detalhePagamento {
+  width: 100%;
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 0.8rem;
+  margin-top: 10px;
+
+}
+
+.detalhePedido .pedido {
+  width: 100%;
+  max-width: 600px;
+  color: #C4C4C4;
+  font-size: 0.8rem;
+  border-bottom: 1px solid #C4C4C4;
+}
+
+.formaPagamento {
+  color: #C4C4C4;
+}
+
+.formaPagamento, .valorPedido {
+  width: 100%;
+  max-width: 600px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.valorPedido .valorTotal {
+  font-weight: 700;
+}
+
+
+/* carrinho de compras - termino */
